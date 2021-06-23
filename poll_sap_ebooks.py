@@ -6,17 +6,14 @@ from pathlib import Path
 from PyPDF2 import PdfFileReader, PdfFileWriter
 #### Prerequisite:
 #### (--index-url https://pypi.douban.com/simple)
-####    python -m pip install pyautogui
-####    python -m pip install Pillow
-####    python -m pip install pywin32 [win32gui is a part of it]
-####    python -m pip install pypdf2
+####    python -m pip install pyautogui pillow pywin32 pypdf2
+#### [win32gui is a part of pywin32]
 #### v3.0   add screen size detection mechanism
 #### v4.0   add pdf merge function
 #### v4.1   add re-poll mode
 #### v5.0   add interaction input
 
 version = "5.0"
-
 start = 2
 end = 0
 dir_book = ""
@@ -173,7 +170,6 @@ The program is simulating the action of 'print chrome web page to pdf',
 so first open the learning hub book, and save the 1st page as '1.pdf' to a local folder,
 then execute this program.
 """)
-
 
 Get_input()
 
